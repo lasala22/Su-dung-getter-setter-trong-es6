@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+            get name() {
+                return this.name;
+            }
+            set name(value) {
+                this.name = value;
+            }
+        }
+        class Programmer extends Person {
+            constructor(name, lang) {
+                super(name);
+                this.lang = lang;
+            }
+            get lang() {
+                return this.lang;
+            }
+            set lang(value) {
+                this.lang = value;
+            }
+        }
+    </script>
+</body>
+</html>
